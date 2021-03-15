@@ -1,0 +1,36 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.flex {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section3 {
+  &__content {
+    flex-basis: 48%;
+  }
+}
+
+.section4 {
+  & .items {
+    & .img {
+      flex-basis: 60%;
+    }
+    & .item-desc {
+      flex-basis: 40%;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      & button {
+        padding: 10px 5px;
+      }
+    }
+  }
+}
+.reverse {
+  flex-flow: row-reverse nowrap !important;
+}

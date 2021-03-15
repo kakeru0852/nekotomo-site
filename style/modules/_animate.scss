@@ -1,0 +1,33 @@
+@import "mixin";
+
+.animate-title {
+  opacity: 0;
+
+  &.inview {
+    opacity: 1;
+    & .char {
+      display: inline-block;
+      @include animation(
+        $name: kf-animate-chars,
+        $direction: 0.5s,
+        $fill-mode: both
+      );
+      @for $i from 1 through 30 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 0.04s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,86 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-size: 16px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+.mb-sm {
+  margin-bottom: 35px !important;
+}
+.mb-md {
+  margin-bottom: 50px !important;
+}
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+.mt-lg {
+  margin-top: 150px !important;
+}
+.pt-lg {
+  padding-top: 150px !important;
+}
+.hei100 {
+  height: 100%;
+  transform: translateY(23px);
+}
+.header {
+  justify-content: flex-start;
+  &__inner {
+    display: block;
+  }
+}
+.mobile-menu__btn {
+  display: none;
+}
+.section1 {
+  flex-direction: row;
+  flex-flow: row-reverse;
+  position: relative;
+  margin-bottom: 300px !important;
+  & .hero {
+    width: 70%;
+    & h1 {
+      display: none;
+    }
+    &__title {
+      margin-left: 5%;
+      transform: translate(0, 40%);
+      & span {
+        color: black;
+      }
+
+      & p {
+        margin-top: 40px !important;
+      }
+    }
+  }
+}
+.section2 {
+  & .slide1 {
+    width: 25%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  & .slide2 {
+    width: 25%;
+    position: absolute;
+    display: block;
+    bottom: 40px;
+    right: 0;
+  }
+}
